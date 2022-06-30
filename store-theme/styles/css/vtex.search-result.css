@@ -1,0 +1,54 @@
+.galleryLayoutOptionButton {
+  background-color: #F0F0F0;
+  color: #3F3F40;
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+}
+
+.galleryLayoutOptionButton--selected {
+  background-color: #3F3F40;
+  color: #FFFFFF;
+}
+
+.buttonShowMore :global(.vtex-button) :global(.vtex-button__label){
+  font-size: 20px;
+}
+
+.buttonShowMore :global(.vtex-button) :global(.vtex-button__label)::after{
+  content: "  ▾";
+  margin-left: 5px;
+}
+
+.galleryLayoutSwitcher {
+  border-radius: 4px 4px 4px 4px;
+  justify-content: center;
+  overflow: hidden;
+  width: auto !important;
+  align-self: center
+}
+
+.galleryTitle--layout {
+  font-family: Roboto;
+  font-size: 29px;
+  text-align: center;
+  background-color: #0b1c44;
+  padding: 11px 0px;
+  color: white;
+  margin-left: -12px;
+  margin-top: 0px;
+}
+
+.galleryItem--list {
+  border-bottom: 1px #E7E9EE solid;
+}
+
+.searchResultContainer {
+  padding: 22px !important;
+  max-width: 1350px;
+}
+
+@media screen and (max-width: 40em) {
+  .galleryItem--grid {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}

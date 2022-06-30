@@ -1,0 +1,28 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) {
+  background-color: #0c1845;
+}
+
+.socialNetworksContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerLayout--footer-mobile {
+  background-color: #fff;
+}
+
+.footerLayout--footer-mobile .socialNetworkWrapper {
+  margin-bottom: 30px;
+}

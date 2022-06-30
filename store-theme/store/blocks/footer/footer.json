@@ -1,0 +1,465 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "title": "Desktop",
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#footer#images",
+      "footer-spacer",
+      "flex-layout.col#footer-links",
+      "flex-layout.col#footer-content",
+      "flex-layout.col#footer-social"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "flex-layout.col#footer-social": {
+    "props": {
+      "blockClass": "social-links"
+    },
+    "children": [
+      "rich-text#footer-atendimento",
+      "rich-text#telefone-footer",
+      "rich-text#email-footer",
+      "rich-text#horario-footer"
+    ]
+  },
+
+  "rich-text#footer-atendimento": {
+    "props": {
+      "blockClass": "footer-atendimento",
+      "text": "Atendimento"
+    }
+  },
+
+  "rich-text#telefone-footer": {
+    "props": {
+      "blockClass": "footer-telefone",
+      "text": "Telefone: (11)2632-7979"
+    }
+  },
+
+  "rich-text#email-footer": {
+    "props": {
+      "blockClass": "footer-email",
+      "text": "Email: roupasdepexsaking@gmail.com"
+    }
+  },
+
+  "rich-text#horario-footer": {
+    "props": {
+      "blockClass": "footer-horario",
+      "text": "Seg. a Sexta 8:00h as 17:30h"
+    }
+  },
+
+  "flex-layout.col#footer-links": {
+    "props": {
+      "blockClass": "footer-content-title-categorias"
+    },
+    "children": [
+      "rich-text#footer-links-title-1",
+      "vtex.menu@2.x:menu#Products"
+    ]
+  },
+
+  "rich-text#footer-links-title-1": {
+    "props": {
+      "blockClass": "footer-links-title",
+      "text": "Categorias"
+    }
+  },
+
+  "flex-layout.col#footer-content": {
+    "props": {
+      "blockClass": "footer-content-title"
+    },
+
+    "children": [
+      "rich-text#footer-content-title-1",
+      "vtex.menu@2.x:menu#footer-clothing"
+    ]
+  },
+
+  "rich-text#footer-content-title-1": {
+    "props": {
+      "blockClass": "footer-content-title",
+      "text": "Conteúdo"
+    }
+  },
+  "flex-layout.col#footer#images": {
+    "children": [
+      "logo#desktop",
+      "rich-text#footer-logo",
+      "image#app-google",
+      "image#app-apple",
+      "image#lojas"
+    ]
+  },
+
+  "image#app-google": {
+    "props": {
+      "src": "https://cdn.awsli.com.br/1903/1903946/arquivos/disponivel-google-play-badge.png",
+      "alt": "Google Play",
+      "blockClass": "app-image",
+      "link": "https://play.google.com/store/search?q=king%20brasil"
+    }
+  },
+
+  "image#app-apple": {
+    "props": {
+      "src": "https://cdn.awsli.com.br/1903/1903946/arquivos/disponivel-na-app-store-botao.png",
+      "alt": "Apple Store",
+      "blockClass": "app-image",
+      "link": "https://4861450.igen.app/"
+    }
+  },
+
+  "image#lojas": {
+    "props": {
+      "src": "https://cdn.awsli.com.br/1903/1903946/arquivos/SELO CREDENCIADAS-01.png",
+      "alt": "Lojas King Brasil",
+      "blockClass": "app-image"
+    }
+  },
+
+  "rich-text#footer-logo": {
+    "props": {
+      "text": "Baixe já nosso app para lojistas",
+      "blockClass": "text-apps"
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#footer-pague",
+      "flex-layout.col#footer-selo",
+      "flex-layout.col#footer-frete"
+    ],
+    "props": {
+      "blockClass": "footer-2"
+    }
+  },
+
+  "flex-layout.col#footer-pague": {
+    "children": [
+      "rich-text#footer-pague-title",
+      "flex-layout.row#footer-pague-content"
+    ],
+    "props": {
+      "blockClass": "footer-pague-content"
+    }
+  },
+
+  "rich-text#footer-pague-title": {
+    "props": {
+      "blockClass": "footer-pague-title",
+      "text": "Pague com"
+    }
+  },
+
+  "flex-layout.row#footer-pague-content": {
+    "props": {
+      "blockClass": "footer-pague-content-image"
+    },
+    "children": ["image#footer-pagamentos"]
+  },
+
+  "image#footer-pagamentos": {
+    "props": {
+      "src": "https://tubaroes.vteximg.com.br/arquivos/pagamento.png",
+      "alt": "Pagamentos"
+    }
+  },
+
+  "flex-layout.col#footer-selo": {
+    "children": [
+      "rich-text#footer-selo-title",
+      "flex-layout.row#footer-selo-content"
+    ],
+    "props": {
+      "blockClass": "footer-selo-content"
+    }
+  },
+
+  "rich-text#footer-selo-title": {
+    "props": {
+      "blockClass": "footer-selo-title",
+      "text": "Selos"
+    }
+  },
+
+  "flex-layout.row#footer-selo-content": {
+    "props": {
+      "blockClass": "footer-selo-content-image"
+    },
+    "children": ["image#footer-selos"]
+  },
+
+  "image#footer-selos": {
+    "props": {
+      "src": "https://tubaroes.vteximg.com.br/arquivos/selo-credenciados.png",
+      "alt": "Selo Credenciados"
+    }
+  },
+
+  "flex-layout.col#footer-frete": {
+    "children": [
+      "rich-text#footer-frete-title",
+      "flex-layout.row#footer-frete-content"
+    ],
+    "props": {
+      "blockClass": "footer-frete-content"
+    }
+  },
+
+  "rich-text#footer-frete-title": {
+    "props": {
+      "blockClass": "footer-frete-title",
+      "text": "Frete"
+    }
+  },
+
+  "flex-layout.row#footer-frete-content": {
+    "props": {
+      "blockClass": "footer-frete-content-image"
+    },
+    "children": ["image#footer-frete"]
+  },
+
+  "image#footer-frete": {
+    "props": {
+      "src": "https://tubaroes.vteximg.com.br/arquivos/frete.png",
+      "alt": "Frete"
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#footer"],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Lojas Adventure de Roupas e acessórios ltda me - CNPJ: 14.000.322/0001-45 © Todos os direitos reservados. 2022",
+      "blockClass": "footer"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "title": "Mobile",
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile",
+      "back-to-top-button"
+    ],
+    "props": {
+      "blockClass": "footer-mobile"
+    }
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "title": "Seção 2",
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "footer-section-two"
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "rich-text#footer-method-payment-title",
+      "image#footer-method-payments",
+      "rich-text#footer-selos-title",
+      "image#footer-selos-site-protegido",
+      "rich-text#footer-shipping-title",
+      "image#footer-shipping"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "title": "Seção 1",
+    "children": [
+      "image#footer-king-logo",
+      "rich-text#footer-download-app",
+      "image#footer-google-play",
+      "image#footer-app-store",
+      "image#footer-selo-credenciado",
+      "rich-text#footer-social-media",
+      "social-networks#mobile",
+      "vtex.menu@2.x:menu#footer-mobile-update"
+    ]
+  },
+
+  "flex-layout.row#3-footer-mobile": {
+    "title": "Seção 3",
+    "children": ["rich-text#footer-text-finish"],
+    "props": {
+      "blockClass": "footer-section-three"
+    }
+  },
+
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-text-finish": {
+    "title": "Texto",
+    "props": {
+      "text": "Lojas Adventure de Roupas e acessórios ltda me - CNPJ: 14.000 322/0001-45 © Todos os direitos reservados. 2022",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-selos-title": {
+    "title": "Título Selos",
+    "props": {
+      "text": "Selos",
+      "blockClass": "footer-selos-title"
+    }
+  },
+  "rich-text#footer-method-payment-title": {
+    "title": "Título Pague com",
+    "props": {
+      "text": "Pague com",
+      "blockClass": "footer-method-payment-title"
+    }
+  },
+  "rich-text#footer-shipping-title": {
+    "title": "Título Forma de Envio",
+    "props": {
+      "text": "Forma de Envio",
+      "blockClass": "footer-shipping-title"
+    }
+  },
+  "rich-text#footer-download-app": {
+    "title": "BAIXE JÁ NOSSO APP PARA LOJISTAS",
+    "props": {
+      "text": "##### BAIXE JÁ NOSSO APP PARA LOJISTAS",
+      "blockClass": "footer-download-app"
+    }
+  },
+  "rich-text#footer-social-media": {
+    "title": "Siga-nos",
+    "props": {
+      "text": "Siga-nos",
+      "blockClass": "footer-social-media"
+    }
+  },
+  "image#footer-king-logo": {
+    "title": "Logo King",
+    "props": {
+      "src": "assets/images/footer-king-logo.png",
+      "blockClass": "footer-king-logo"
+    }
+  },
+  "image#footer-app-store": {
+    "title": "Imagem App Store",
+    "props": {
+      "src": "assets/images/app-store.png",
+      "blockClass": "footer-icons-store"
+    }
+  },
+  "image#footer-google-play": {
+    "title": "Imagem Google Play",
+    "props": {
+      "src": "assets/images/google-play.png",
+      "blockClass": "footer-icons-store"
+    }
+  },
+  "image#footer-selo-credenciado": {
+    "title": "Imagem Selo Credenciado",
+    "props": {
+      "src": "assets/images/selo-credenciado.png",
+      "blockClass": "footer-selo-credenciado"
+    }
+  },
+  "image#footer-method-payments": {
+    "title": "Imagem Métodos de pagamento",
+    "props": {
+      "src": "assets/images/method-payments.png",
+      "blockClass": "footer-method-payments"
+    }
+  },
+  "image#footer-shipping": {
+    "title": "Imagem Forma de Envio",
+    "props": {
+      "src": "assets/images/shipping.png",
+      "blockClass": "footer-shipping"
+    }
+  },
+  "image#footer-selos-site-protegido": {
+    "title": "Imagem Selo",
+    "props": {
+      "src": "assets/images/selos-site-protegido.png",
+      "blockClass": "footer-selos-site-protegido"
+    }
+  },
+  "image#footer-finish": {
+    "title": "Imagem Final",
+    "props": {
+      "src": "assets/images/footer-finish.png",
+      "blockClass": "footer-finish"
+    }
+  },
+  "social-networks#mobile": {
+    "title": "Ícones de redes sociais",
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        }
+      ]
+    }
+  },
+  "back-to-top-button": {
+    "props": {
+      "displayThreshold": 400,
+      "display": "caret-icon",
+      "blockClass": "back-to-top-button"
+    }
+  }
+}

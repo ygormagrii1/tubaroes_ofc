@@ -1,0 +1,287 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media screen and (min-width: 40em) {
+
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRowContent--main-header {
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+}
+
+.flexRow--deals {
+  background-color: #a7afbd;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--buyButton :global(.vtex-button) {
+  display: none;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+.flexColChild--footer-content-title-categorias,
+.flexColChild--footer-content-title,
+.flexColChild--social-links {
+  height: auto !important;
+}
+
+.flexColChild--footer-content-title-categorias :global(.vtex-menu-2-x-menuItem--isClosed) :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin-left: 0px !important;
+}
+
+.flexColChild--footer-content-title :global(.vtex-menu-2-x-menuItem--isClosed) :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin-left: 0px !important;
+}
+
+.flexColChild--social-links .footer-email,
+.flexColChild--social-links .footer-telefone,
+.flexColChild--social-links .footer-horario {
+  margin: 0 auto !important;
+}
+
+:global(.vtex-store-components-3-x-imageElement--app-image) {
+  width: 150px !important;
+  padding-bottom: 10px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--footer-links-title) {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.flexColChild--footer-content-title-categorias :global(.vtex-menu-2-x-menuItem--isClosed) :global(.vtex-menu-2-x-styledLinkContent) {
+  color: white !important;
+}
+
+.flexColChild--footer-content-title-categorias :global(.vtex-menu-2-x-menuItem--isClosed) :global(.vtex-menu-2-x-styledLinkContent):hover {
+  color: white !important;
+}
+
+.flexColChild--footer-content-title :global(.vtex-rich-text-0-x-paragraph--footer-content-title) {
+  color: white !important;
+  font-weight: bold;
+}
+
+.flexColChild--footer-content-title-categorias :global(.vtex-menu-2-x-menuItem--isClosed) :global(.vtex-menu-2-x-styledLinkContent):hover {
+  color: white !important;
+}
+
+.flexColChild--footer-content-title :global(.vtex-menu-2-x-menuItem--isClosed) :global(.vtex-menu-2-x-styledLinkContent) {
+  color: white !important;
+}
+
+.flexColChild--social-links :global(.vtex-rich-text-0-x-container--footer-atendimento) {
+  font-weight: bold;
+}
+
+.flexColChild--social-links :global(.vtex-rich-text-0-x-container--footer-atendimento) :global(.vtex-rich-text-0-x-paragraph--footer-atendimento),
+.flexColChild--social-links :global(.vtex-rich-text-0-x-container--footer-telefone) :global(.vtex-rich-text-0-x-paragraph--footer-telefone),
+.flexColChild--social-links :global(.vtex-rich-text-0-x-container--footer-email) :global(.vtex-rich-text-0-x-paragraph--footer-email),
+.flexColChild--social-links :global(.vtex-rich-text-0-x-link--footer-email),
+.flexColChild--social-links :global(.vtex-rich-text-0-x-container--footer-horario) :global(.vtex-rich-text-0-x-paragraph--footer-horario) {
+  color: white !important;
+}
+
+.flexColChild--footer-pague-content :global(.vtex-flex-layout-0-x-flexRow--footer-pague-content-image) :global(.vtex-flex-layout-0-x-flexRowContent--footer-pague-content-image) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--footer-2),
+:global(.vtex-flex-layout-0-x-flexRow--credits) {
+  background: white;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--credits) :global(.vtex-rich-text-0-x-container--footer) {
+  justify-content: center;
+}
+
+.flexColChild--footer-selo-content :global(.vtex-rich-text-0-x-container--footer-selo-title),
+.flexColChild--footer-frete-content :global(.vtex-rich-text-0-x-container--footer-frete-title) {
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--text-apps) {
+  color: white !important;
+  font-weight: bold;
+}
+
+.flexColChild--product-assembly-options-container :global(.vtex-button) :global(.vtex-button__label) {
+  font-weight: bold;
+  border: 2px solid #ffeb3b;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #011e42;
+  cursor: pointer;
+  background-color: #ffeb3b;
+}
+
+.flexColChild--product-assembly-options-container :global(.vtex-button) :global(.vtex-button__label)::after{
+  content: "  ▾ ";
+  margin-left: 5px;
+}
+
+:global(.vtex-store-video-1-x-videoContainer){
+  height: 400px !important;
+  width: 100%;
+  text-align: center;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionContainer) {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--home-categories) {
+  margin: inherit !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--home-categories2) {
+  margin-top: 60px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--home2-categories) {
+  margin-bottom: 40px !important;
+}
+
+:global(.vtex-my-orders-app-3-x-orderProductShipping)::after {
+  font-size: 11px;
+  content: " + (Caso seu pedido tenha um item da categoria personalizado(as), considerar 30 dias úteis de produção + prazo de entrega mesmo que não tenha adicionado nome)."
+}
+
+:global(.vtex-my-orders-app-3-x-detailsBtn){
+  display: none;
+}
+
+.flexRowContent--home-categories {
+
+}
+
+.flexRowContent--menu-row {
+  padding: 50px;
+}
+
+.flexRowContent--footer-2 {
+  padding: 50px;
+}
+
+.flexRowContent--prod-main {
+  padding: 30px;
+}
+
+.flexRowContent--menu-sections .stretchChildrenWidth {
+  width: auto !important;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .flexRow:first-child {
+  padding: 32px 10px;
+  background-color: #011e42;
+}
+
+.flexRow--footer-section-two,
+.flexRow--footer-section-three {
+  background-color: #fff;
+}
+
+.flexRow--footer-section-three {
+  padding: 10px 20px;
+  margin: 20px 0 10px;
+  border-top: 1px solid #ddd;
+}
+
+.flexRow--footer-section-two {
+  padding: 20px 10px;
+}
+
+.flexRow--footer-attendance-section-1 {
+  padding: 0 !important;
+}

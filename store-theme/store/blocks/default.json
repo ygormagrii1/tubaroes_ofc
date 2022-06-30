@@ -1,0 +1,17 @@
+{
+  "store.custom#default": {
+    "blocks": [
+      "sandbox#default"
+    ]
+  },
+
+  "sandbox#default": {
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "initialContent": "<h1 style=\"text-align:center;\">Hello World</h1>",
+      "allowCookies": false
+    }
+  }
+
+}

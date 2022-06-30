@@ -1,0 +1,129 @@
+{
+  "vtex.menu@2.x:menu#footer-mobile-update": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-mobile"
+    },
+    "children": [
+      "menu-item#footer-categories",
+      "menu-item#footer-content",
+      "menu-item#footer-attendance"
+    ]
+  },
+
+  "menu-item#footer-categories": {
+    "props": {
+      "id": "menu-item-categories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": true,
+        "tagTitle": "Categorias",
+        "text": "Categorias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#categories"]
+  },
+  "vtex.menu@2.x:submenu.accordion#categories": {
+    "children": ["vtex.menu@2.x:menu#categories-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#categories-accordion": {
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#footer-content": {
+    "props": {
+      "id": "menu-item-content",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": true,
+        "tagTitle": "Conteúdo",
+        "text": "Conteúdo"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#content"]
+  },
+  "vtex.menu@2.x:submenu.accordion#content": {
+    "children": ["vtex.menu@2.x:menu#content-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#content-accordion": {
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#footer-attendance": {
+    "props": {
+      "id": "menu-item-attendance",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": true,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#attendance"]
+  },
+  "vtex.menu@2.x:submenu.accordion#attendance": {
+    "children": [
+      "flex-layout.row#footer-attendance-section-1",
+      "flex-layout.row#footer-attendance-section-2"
+    ]
+  },
+
+  "flex-layout.row#footer-attendance-section-1": {
+    "title": "Telefone",
+    "children": ["rich-text#footer-menu-phone", "image#footer-menu-icon-phone"],
+    "props": {
+      "blockClass": "footer-attendance-section-1"
+    }
+  },
+  "flex-layout.row#footer-attendance-section-2": {
+    "title": "Telefone",
+    "children": ["rich-text#footer-menu-email", "image#footer-menu-icon-email"],
+    "props": {
+      "blockClass": "footer-attendance-section-1"
+    }
+  },
+  "rich-text#footer-menu-phone": {
+    "title": "Telefone",
+    "props": {
+      "text": "Telefone: (11) 2632-7979",
+      "blockClass": "footer-menu-phone"
+    }
+  },
+  "image#footer-menu-icon-phone": {
+    "title": "Ícone Phone",
+    "props": {
+      // "src": "assets/images/footer-menu-icon-phone.png",
+      "blockClass": "footer-menu-icon-phone"
+    }
+  },
+  "rich-text#footer-menu-email": {
+    "title": "Email",
+    "props": {
+      "text": " E-mail: roupasdepescaking@gmail.com",
+      "blockClass": "footer-menu-email"
+    }
+  },
+  "image#footer-menu-icon-email": {
+    "title": "Ícone Email",
+    "props": {
+      // "src": "assets/images/footer-menu-icon-email.png",
+      "blockClass": "footer-menu-icon-email"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+.sliderLayoutContainer--carousel {
+  background-color: #F0F0F0;
+}
+
+.sliderLayoutContainer--shelf{
+  max-width: 92%;
+  padding-bottom: 30px;
+}
+
+.sliderTrackContainer--temas2{
+  max-width: 900px !important;
+}
+
+.sliderTrackContainer {
+  max-width: 1520px;
+}
+
+.temas2{
+  padding: 20px;
+}
+
+.caretIcon {
+  width: 30px;
+  height: 30px;
+  margin-top: -25px;
+  background: #5c5c5c;
+  color: white;
+  opacity: .5;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}

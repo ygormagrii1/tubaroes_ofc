@@ -1,0 +1,239 @@
+/*
+  Customização de css
+  By Insight Grupo
+*/
+
+:global(.vtex-store__template) {
+  padding: 0px;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  padding: 22px;
+}
+
+:global(.vtex-store-components-3-x-notificationBarContainer) {
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-link) {
+  display: none;
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+  background-color: #ffffff;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  background-color: #ffffff;
+}
+
+:global(.vtex-breadcrumb-1-x-container) {
+  font-size: 8px;
+}
+
+:global(.vtex-store-components-3-x-shippingTableCellDeliveryEstimate)::after{
+  font-size: 9px; content: " (Caso seu pedido tenha um item personalizado, considerar 30 dias úteis de produção + prazo de entrega)."
+}
+
+.imageElement--imgCategory {
+  width: 95%;
+}
+
+.container .imageElement--cate5 {
+  width: 1120px;
+  padding-bottom: 50px;
+}
+
+.productDescriptionContainer {
+  padding: 0px 50px;
+}
+
+.c-on-base :global(.vtex-breadcrumb-1-x-term) {
+  display: none;
+}
+
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #03054e;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+:global(.vtex-my-orders-app-3-x-cancelBtn){
+  display: none !important;
+}
+
+:global(.vtex-order-placed-2-x-cancelOrderButton){
+  display: none !important;
+}
+
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.tubaroes-store-theme-0-x-vtex-button {
+  display: none;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.sizeMobile,
+.sizeDesktop {
+  padding: 0;
+}
+
+.productDescriptionTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.productDescriptionTitle::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #011e42 !important;
+  margin: 15px auto 30px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--search-plps) .container {
+  padding: 0;
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #313131;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.imageElement--footer-king-logo {
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.imageElement--footer-icons-store:first-child {
+  margin-bottom: 22px;
+}
+
+.imageElement--footer-icons-store {
+  width: 150px;
+  height: 44px;
+}
+
+.imageElement--footer-finish {
+  height: 70px;
+  margin-top: 6px;
+}
+
+.imageElement--footer-selo-credenciado {
+  height: 175px;
+}
+
+.backToTopButtonActive :global(.vtex-button) {
+  height: 64px;
+  width: 64px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 9px -2px #011e42 !important;
+}
+
+.backToTopButtonActive :global(.vtex-button__label) {
+  padding: 0 !important;
+}

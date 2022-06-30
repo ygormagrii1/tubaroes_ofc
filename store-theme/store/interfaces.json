@@ -1,0 +1,11 @@
+{
+  "avisos-produto": {
+    "component": "AvisosProduto"
+  },
+  "file-upload": {
+    "component": "FileUpload"
+  },
+  "file-upload-cont": {
+    "component": "SendId"
+  }
+}

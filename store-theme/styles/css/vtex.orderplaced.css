@@ -1,0 +1,11 @@
+.vtex-order-placed-2-x-noticeListItem {
+  background-color: black !important;
+}
+
+li.vtex-order-placed-2-x-noticeListItem:first-child::after{
+  font-size: 16px; content: "(Caso seu pedido tenha um item personalizado, considerar 30 dias úteis de produção + prazo de entrega)."
+}
+:global(.vtex-my-orders-app-3-x-orderProductShipping){
+  display: none !important;
+}
+

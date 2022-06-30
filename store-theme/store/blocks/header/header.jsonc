@@ -1,0 +1,405 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#2-desktop": {
+    "children": ["notification.bar#home"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop", "vtex.menu@2.x:menu#home"]
+  },
+
+  "vtex.menu@2.x:menu#home": {
+    "children": [
+      "menu-item#camisetas",
+      "menu-item#equipamentos",
+      "menu-item#personalizada",
+      "menu-item#ciclista",
+      "menu-item#combo",
+      "menu-item#bandana",
+      "menu-item#outro"
+    ]
+  },
+
+  "submenu#king-menu": {
+		"title": "Submenu",
+		"children": ["flex-layout.row#king-submenu"],
+		"props": {
+			"blockClass": "king-menu",
+			"orientation": "vertical"
+		}
+	},
+
+  "flex-layout.row#king-submenu": {
+		"title": "Colunas",
+		"children": [
+			"flex-layout.col#king-submenu-one",
+			"flex-layout.col#king-submenu-two",
+			"flex-layout.col#king-submenu-three",
+			"flex-layout.col#king-submenu-four",
+			"flex-layout.col#king-submenu-five",
+			"flex-layout.col#king-submenu-six",
+			"flex-layout.col#king-submenu-seven"
+		],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "flex-layout.col#king-submenu-one": {
+		"title": "Coluna 1",
+		"children": ["menu#king-default"],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "flex-layout.col#king-submenu-two": {
+		"title": "Coluna 2",
+		"children": ["menu#king-default"],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "flex-layout.col#king-submenu-three": {
+		"title": "Coluna 3",
+		"children": ["menu#king-default"],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "flex-layout.col#king-submenu-four": {
+		"title": "Coluna 4",
+		"children": ["menu#king-default"],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "flex-layout.col#king-submenu-five": {
+		"title": "Coluna 5",
+		"children": ["menu#king-default"],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "flex-layout.col#king-submenu-six": {
+		"title": "Coluna 6",
+		"children": ["menu#king-default"],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "flex-layout.col#king-submenu-seven": {
+		"title": "Coluna 7",
+		"children": ["menu#king-default"],
+		"props": {
+			"blockClass": "menu-sections"
+		}
+	},
+  "menu#king-default": {
+		"title": "Menu",
+		"props": {
+			"blockClass": "king-default",
+			"tagTitle": "Menu Title",
+			"orientation": "vertical"
+		}
+	},
+
+  "menu-item#camisetas": {
+    "blocks": ["submenu#king-menu"],
+    "props": {
+      "id": "camisetas-pronta-entrega",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-item-camisetas",
+      "itemProps": {
+        "type": "internal",
+        "href": "/camisetas-pronta-entrega",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "PRODUTOS À PRONTA ENTREGA"
+      },
+      "iconToTheRight": true
+    }
+  },
+
+  "menu-item#equipamentos": {
+    "blocks": ["submenu#king-menu"],
+    "props": {
+      "id": "camisetas-personalizada",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-item-personalizada",
+      "itemProps": {
+        "type": "internal",
+        "href": "/camisetas-personalizada",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Camisetas Personalizadas"
+
+      },
+      "iconToTheRight": true
+    }
+  },
+
+  "menu-item#personalizada": {
+    "props": {
+      "id": "equipamentos",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-item-equipamentos",
+      "itemProps": {
+        "type": "internal",
+        "href": "/equipamentos",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Equipamentos"
+      },
+      "iconToTheRight": true
+    }
+  },
+
+  "menu-item#ciclista": {
+    "blocks": ["submenu#king-menu"],
+    "props": {
+      "id": "ciclista",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-item-ciclistas",
+
+      "itemProps": {
+        "type": "internal",
+        "href": "/ciclistas",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Ciclistas"
+      },
+      "iconToTheRight": true
+    }
+  },
+
+  "menu-item#combo": {
+    "props": {
+      "id": "combo",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-item-combo",
+      "itemProps": {
+        "type": "internal",
+        "href": "/combos",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Combo"
+      },
+      "iconToTheRight": true
+    }
+  },
+
+  "menu-item#bandana": {
+    "props": {
+      "id": "bandana",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-item-bandana",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bandanas",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Bandanas"
+      },
+      "iconToTheRight": true
+    }
+  },
+
+  "menu-item#outro": {
+    "blocks": ["submenu#king-menu"],
+    "props": {
+      "id": "outros",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-item-outro",
+      "itemProps": {
+        "type": "internal",
+        "href": "/outros",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Outros"
+      },
+      "iconToTheRight": true
+    }
+  },
+
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "flex-layout.col#pedidos",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+
+  "flex-layout.col#pedidos": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["stack-layout#pedidos"]
+  },
+
+  "stack-layout#pedidos": {
+    "props": {
+      "blockClass": "pedidos"
+    },
+    "children": [
+      "link#pedidos"
+    ]
+  },
+
+  "link#pedidos": {
+    "props": {
+      "displayMode": "button",
+      "target": "_blank",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "large"
+      },
+      "label": "Área Lojistas",
+      "href": "https://kingparalojista.com.br/"
+    }
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://cdn.awsli.com.br/400x300/2206/2206657/logo/e2fdaa3ee7.png",
+      "width": "180"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile", "sticky-layout#2-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "flex-layout.col#pedidos",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "sticky-layout#2-mobile": {
+    "children": ["flex-layout.row#2-mobile"]
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "secundary-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#camisetas",
+      "menu-item#equipamentos",
+      "menu-item#personalizada",
+      "menu-item#ciclista",
+      "menu-item#combo",
+      "menu-item#bandana",
+      "menu-item#outro"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  }
+}

@@ -1,0 +1,231 @@
+.styledLinkIcon {
+  background-image: url("https://cdn.awsli.com.br/1903/1903946/arquivos/Ativo%20148.png");
+  width: 30px;
+}
+
+:global(.vtex-menu-2-x-menuContainer) {
+  display: flex;
+  justify-content: center;
+}
+
+:global(.vtex-menu-2-x-menuContainer) :global(.vtex-menu-2-x-menuContainerNav) :global(.vtex-menu-2-x-menuContainer) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav) :global(.vtex-menu-2-x-menuItem) :global(.vtex-menu-2-x-styledLinkContainer) {
+  padding-bottom: 12px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent) {
+  justify-content: start;
+}
+
+:global(.vtex-menu-2-x-styledLink--menu-item-camisetas) .styledLinkContent--menu-item-camisetas::before {
+  content: "";
+  margin-right: 10px;
+  background: url("https://tubaroes.vteximg.com.br/arquivos/entrega-icon.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.styledLinkContent:hover {
+  color: #b39821 !important;
+}
+
+.styledLinkContent::before {
+  color: #b39821 !important;
+}
+
+:global(.vtex-menu-2-x-styledLink--menu-item-equipamentos) .styledLinkContent--menu-item-equipamentos::before {
+  content: "";
+  margin-right: 10px;
+  background: url("https://tubaroes.vteximg.com.br/arquivos/equipamentos-icon.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+:global(.vtex-menu-2-x-styledLink--menu-item-personalizada) .styledLinkContent--menu-item-personalizada::before {
+  content: "";
+  margin-right: 10px;
+  background: url("https://tubaroes.vteximg.com.br/arquivos/camisa-icon.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+:global(.vtex-menu-2-x-styledLink--menu-item-ciclistas) .styledLinkContent--menu-item-ciclistas::before {
+  content: "";
+  margin-right: 10px;
+  background: url("https://tubaroes.vteximg.com.br/arquivos/bike-icon.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+:global(.vtex-menu-2-x-styledLink--menu-item-combo) .styledLinkContent--menu-item-combo::before {
+  content: "";
+  margin-right: 10px;
+  background: url("https://tubaroes.vteximg.com.br/arquivos/blusa-icon.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+:global(.vtex-menu-2-x-styledLink--menu-item-bandana) .styledLinkContent--menu-item-bandana::before {
+  content: "";
+  margin-right: 10px;
+  background: url("https://tubaroes.vteximg.com.br/arquivos/bandanas-icon.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+:global(.vtex-menu-2-x-styledLink--menu-item-outro) .styledLinkContent--menu-item-outro::before {
+  content: "";
+  margin-right: 10px;
+  background: url("https://tubaroes.vteximg.com.br/arquivos/outros-icon.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.styledLinkContent--king-default {
+
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--footer-content-title) .styledLinkContainer,
+:global(.vtex-flex-layout-0-x-flexColChild--footer-content-title-categorias) .styledLinkContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 40em) {
+  .menuContainerNav {
+    width: 100%;
+  }
+
+  .styledLinkContainer {
+    display: flex;
+  }
+
+  .submenuContainer--king-menu {
+    padding: 0 30px;
+  }
+
+  .submenuWrapper--king-menu {
+    position: relative;
+    border-color: #e6e6e6;
+    padding: 0 0 5px;
+    margin-bottom: 16px;
+  }
+
+  .styledLinkContainer--king-default {
+    padding: 0 12px !important;
+    margin: 0 0 12px;
+  }
+
+  .menuContainer--king-default {
+    gap: unset !important;
+  }
+
+  .styledLinkContent {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .styledLinkContent--king-default {
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .submenuWrapper--king-menu {
+    padding: 0;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+  }
+
+  .submenu--king-menu :global(.vtex-store-components-3-x-container) {
+    padding: 30px;
+  }
+
+  .menuItem--king-default .styledLinkContainer--king-default {
+    margin: 0;
+  }
+
+  .menuContainerNav--king-default .menuContainer--king-default .menuItem--king-default {
+    padding-left: 15px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--menu-sections) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child .menuContainerNav--king-default .menuContainer--king-default .menuItem--king-default {
+    padding-left: 0;
+  }
+
+  .menuContainerNav--king-default .menuContainer--king-default .menuItem--king-default .styledLinkContainer--king-default {
+    padding: 0;
+  }
+}
+
+.styledLinkContainer--footer .styledLinkContent--footer {
+  color: #FFF;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .styledLinkContent {
+  color: #FFF;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .menuItem--isOpen {
+  padding-bottom: 15px;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .menuItem {
+  border: 1px solid #fff;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .submenuAccordion .menuItem {
+  border: none;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .submenuAccordion .menuContainer {
+  gap: unset;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .submenuAccordion .styledLinkContainer {
+  padding: 0 0 15px;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .styledLinkContainer {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .styledLinkContent {
+  text-transform: initial;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .accordionIcon {
+  right: 18px;
+  position: absolute;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mobile) .submenuAccordion {
+  padding: 0 15px;
+  flex-direction: column;
+}

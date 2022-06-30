@@ -1,0 +1,260 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      //"rich-text#shelf-temas",
+      //"list-context.image-list#demo4",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      // "flex-layout.row#deals",
+      "flex-layout.row#home3",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#home",
+      "rich-text#novos-title",
+      "flex-layout.row#novosProdutos",
+      //"flex-layout.row#home2",
+      //"flex-layout.row#lojistas",
+      //"rich-text#shelf-video",
+      "responsive-layout.mobile#mobile",
+      "responsive-layout.desktop#desktop",
+      "rich-text#shelf-franquias",
+      "list-context.image-list#franquias"
+      //"rich-text#link",
+      //"newsletter"
+    ]
+  },
+
+  "responsive-layout.desktop#desktop": {
+    "children": ["flex-layout.row#desktop"]
+  },
+
+  "responsive-layout.mobile#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+
+
+  "list-context.image-list#demo": {
+    "title": "Banner principal",
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "always",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.row#home3": {
+    "props":{
+      "blockClass": "home-categories2"
+    },
+    "children": [
+      "image#category64"
+    ]
+  },
+
+  "image#category64": {
+    "props": {
+      "src": "https://cdn.awsli.com.br/1140x1448/2206/2206657/banner/2c095a9f02.png",
+      "maxWidth": "100%",
+      "blockClass": "imgCategory"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "**Super Ofertas Produtos** com preços imperdíveis",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#home": {
+    "props":{
+      "blockClass": "home-categories"
+    },
+    "children": [
+      "image#category4",
+      "image#category2"
+    ]
+  },
+
+  "image#category4": {
+    "props": {
+      "src": "https://cdn.awsli.com.br/400x400/1903/1903946/banner/e7756b2d30.png",
+      "maxWidth": "100%",
+      "blockClass": "imgCategory"
+    }
+  },
+
+  "image#category2": {
+    "props": {
+      "src": "https://cdn.awsli.com.br/400x400/1903/1903946/banner/51e1eb0d7b.png",
+      "maxWidth": "100%",
+      "blockClass": "imgCategory"
+    }
+  },
+
+  "rich-text#novos-title": {
+    "props": {
+      "text": "**Lançamentos** Não perca essa oportunidade",
+      "blockClass": "shelfTemas"
+    }
+  },
+  "flex-layout.row#novosProdutos": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#novos": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#novos-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#mobile": {
+    "props":{
+      "blockClass": "video-home"
+    },
+    "children": [
+      "video#mobile"
+    ]
+  },
+
+  "video#mobile": {
+    "props": {
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?app=desktop&v=hyEeJiXreW4",
+      "blockClass": "videoElMobile"
+    }
+  },
+
+  "flex-layout.row#desktop": {
+    "props":{
+      "blockClass": "video-home"
+    },
+    "children": [
+      "video#desktop"
+    ]
+  },
+
+  "rich-text#shelf-video": {
+    "props": {
+      "text": "**Se torne um franqueado** King Brasil",
+      "blockClass": "shelfTemas"
+    }
+  },
+
+  "video#desktop": {
+    "props": {
+      "width": "800px",
+      "height": "410px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?app=desktop&v=hyEeJiXreW4",
+      "blockClass": "videoEl"
+    }
+  },
+
+
+  "rich-text#shelf-franquias": {
+    "props": {
+      "text": "**Conheça algumas Franquias** King Brasil",
+      "blockClass": "shelfTemas"
+    }
+  },
+
+  "list-context.image-list#franquias": {
+    "children": ["slider-layout#franquias-images"],
+    "props": {
+      "height": 250,
+      "blockClass": "marcasHome",
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/files/banner-infocard2.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#franquias-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 6,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "always"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Sua loja preferida**\nwww.kingbrasil.com.br",
+      "blockClass": "link"
+    }
+  }
+}
